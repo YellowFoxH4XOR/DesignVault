@@ -1,0 +1,149 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability improvements */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for pattern documentation */
+.pattern-table {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.pattern-table th {
+  background-color: var(--ifm-color-primary-light);
+  color: white;
+  font-weight: 600;
+}
+
+.pattern-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+/* Trade-offs styling */
+.trade-offs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.trade-offs-pros,
+.trade-offs-cons {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.trade-offs-pros {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-left: 4px solid #22c55e;
+}
+
+.trade-offs-cons {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-left: 4px solid #ef4444;
+}
+
+/* Pattern navigation improvements */
+.pattern-nav {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.pattern-nav-item {
+  padding: 0.5rem 1rem;
+  background-color: var(--ifm-color-primary-lightest);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--ifm-color-primary-darkest);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.pattern-nav-item:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  text-decoration: none;
+}
+
+/* Code block improvements */
+.theme-code-block {
+  margin: 1.5rem 0;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .trade-offs {
+    grid-template-columns: 1fr;
+  }
+  
+  .pattern-nav {
+    justify-content: center;
+  }
+}
+
+/* Pattern category headers */
+.pattern-category {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 1rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.pattern-category h2 {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary-dark);
+}
+
+/* Implementation section styling */
+.implementation-section {
+  background-color: rgba(142, 150, 170, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.implementation-section h3 {
+  margin-top: 0;
+  color: var(--ifm-color-primary-dark);
+}
+
+/* Related patterns section */
+.related-patterns {
+  background-color: var(--ifm-color-secondary-lightest);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.related-patterns h3 {
+  margin-top: 0;
+  color: var(--ifm-color-primary-dark);
+} 
