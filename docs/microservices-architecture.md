@@ -66,4 +66,4 @@ Patterns for decomposing monolithic applications into independent, loosely coupl
 
 ## Related Patterns
 - See [Messaging Systems](./messaging-systems.md) for service communication
-- See [API Gateway](./api-gateway.md) for entry point patterns 
+- See [Security & Authorization](./security-authorization.md#api-gateway) for API Gateway patterns 

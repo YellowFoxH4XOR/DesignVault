@@ -98,6 +98,8 @@ Common issues:
 - **Node.js version**: Ensure compatibility with Node 18+
 - **Dependencies**: Check for missing or incompatible packages
 - **Memory**: Large sites may need increased memory allocation
+- **Lock file missing**: Ensure `package-lock.json` exists in repository
+- **Security vulnerabilities**: Development dependencies may show warnings (safe for production builds)
 
 #### Broken Links
 

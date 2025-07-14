@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes} = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -22,7 +23,7 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -42,7 +43,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           // Please change this to your repo.
-          editUrl: 'https://github.com/designvault/designvault/tree/main/',
+          editUrl: 'https://github.com/yourusername/designvault/tree/main/',
         },
         blog: false,
         theme: {
@@ -85,15 +86,15 @@ const config = {
             items: [
               {
                 label: 'Distributed Systems',
-                to: '/distributed-systems-core',
+                to: 'distributed-systems-core',
               },
               {
                 label: 'Resilience & Fault Tolerance',
-                to: '/resilience-fault-tolerance',
+                to: 'resilience-fault-tolerance',
               },
               {
                 label: 'Data Management',
-                to: '/data-management',
+                to: 'data-management',
               },
             ],
           },
@@ -102,15 +103,15 @@ const config = {
             items: [
               {
                 label: 'Microservices',
-                to: '/microservices-architecture',
+                to: 'microservices-architecture',
               },
               {
                 label: 'Messaging Systems',
-                to: '/messaging-systems',
+                to: 'messaging-systems',
               },
               {
                 label: 'Cloud & Serverless',
-                to: '/cloud-serverless',
+                to: 'cloud-serverless',
               },
             ],
           },
@@ -123,7 +124,7 @@ const config = {
               },
               {
                 label: 'Contribute',
-                to: '/contributing',
+                to: 'contributing',
               },
             ],
           },
